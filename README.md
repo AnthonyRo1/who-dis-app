@@ -11,11 +11,11 @@
     <a href="https://github.com/Dedition/WhoDis"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/Dedition/WhoDis">View Site</a>
+    <a href="https://who-dis-app.herokuapp.com/">View Site</a>
     ·
-    <a href="https://github.com/Dedition/WhoDis/issues">Report Bug</a>
+    <a href="https://github.com/AnthonyRo1/who-dis-app/issues">Report Bug</a>
     ·
-    <a href="https://github.com/Dedition/WhoDis/issues">Request Feature</a>
+    <a href="https://github.com/AnthonyRo1/who-dis-app/issues">Request Feature</a>
   </p>
 </p>
 
@@ -75,7 +75,7 @@ The front end is built with React and Javascript while utilizing Redux architect
 1. Clone this repository (only this branch)
 
    ```bash
-   git clone https://github.com/Dedition/WhoDis.git
+   git clone https://github.com/AnthonyRo1/who-dis-app.git
    ```
 
 2. Install dependencies
@@ -111,7 +111,7 @@ The front end is built with React and Javascript while utilizing Redux architect
 
 
 ## Roadmap
-See the [open issues](https://github.com/Dedition/WhoDis/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/AnthonyRo1/who-dis-app/issues) for a list of proposed features (and known issues).
 
 
 ## Contributing
@@ -130,7 +130,7 @@ Contributions are what make the open source community such an amazing place to b
 - Weiqi Mei - [GitHub](https://github.com/weiqimei)
 - Sona Jasani - [GitHub](https://github.com/sonajasani)
 - Anthony Rodriguez - [GitHub](https://github.com/AnthonyRo1)
-- Project Link: [https://github.com/Dedition/WhoDis](https://github.com/Dedition/WhoDis)
+- Project Link: [https://github.com/AnthonyRo1/who-dis-app](https://github.com/AnthonyRo1/who-dis-app)
 
 
 
