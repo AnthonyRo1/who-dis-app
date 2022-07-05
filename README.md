@@ -41,7 +41,7 @@
 ## About The Project
 
 
-[Click here to view WhoDis? live!](https://whodis-app.herokuapp.com/)
+[Click here to view WhoDis? live!](https://who-dis-app.herokuapp.com/)
 <br>
 ![Screenshot (132)](https://user-images.githubusercontent.com/99559369/177391574-9ce8a9db-ba9e-412f-a358-0879926b882d.png)
 </br>
