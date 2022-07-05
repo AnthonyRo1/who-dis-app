@@ -1,5 +1,6 @@
 import './eachchannel.css'
 import { useState, useEffect } from 'react';
+import { useParams } from 'react-router-dom';
 import {useDispatch} from 'react-redux';
 import { removeSingleChannel, editSingleChannel } from '../../store/channels';
 import { getChannelMessages } from '../../store/channel_messages';
@@ -8,13 +9,14 @@ import { getSingleChannel } from '../../store/check_home';
 import { NavLink } from 'react-router-dom';
 const EachChannel = ({channelInfo, isOwner, serverId}) => {
 
+
+
     const dispatch = useDispatch();
 
     const [name, setName] = useState('');
     const [toggleForm, setToggleForm] = useState(false);
     const [toggleDelete, setToggleDelete] = useState(false);
     const [errors, setErrors] = useState([]);
-
     useEffect(() => {
         const err = [];
         if (name.length <= 4) err.push('Channel name must be at least 5 characters')

@@ -3,6 +3,7 @@ import {io} from 'socket.io-client'
 import { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { createChannelMessage, deleteMessage } from '../../store/channel_messages';
+import {useParams} from 'react-router-dom'
 
 
 let socket;
@@ -11,24 +12,23 @@ const ChatField = ({channelId}) => {
     const dispatch = useDispatch();
     const [content, setContent] = useState('');
     const user = useSelector((state) => state.session.user);
+    // useEffect(() => {
 
-    useEffect(() => {
+    //     socket = io();
 
-        socket = io();
+    //     socket.on("chat", (chat) => {
 
-        socket.on("chat", (chat) => {
-
-            const content = chat.msg
-            const payload = {
-                content
-            }
-            dispatch(createChannelMessage(channelId, payload))
-        })
+    //         const content = chat.msg
+    //         const payload = {
+    //             content
+    //         }
+    //         dispatch(createChannelMessage(channelId, payload))
+    //     })
         
-        return (() => {
-            socket.disconnect();
-        })
-    }, [dispatch, channelId])
+    //     return (() => {
+    //         socket.disconnect();
+    //     })
+    // }, [dispatch, channelId])
 
     // const deleteMessage = async(e, msg) => {
     //     e.preventDefault();
@@ -45,7 +45,12 @@ const ChatField = ({channelId}) => {
     const submitChat = (e) => {
         e.preventDefault();
 
-        socket.emit("chat", {user: user?.username, msg: content})
+        // socket.emit("chat", {user: user?.username, msg: content})
+
+        const payload = {
+            content
+        }
+        dispatch(createChannelMessage(channelId, payload))
         setContent("")
 
         const container = document.querySelector('.chats-container')
